@@ -1,0 +1,14 @@
+﻿<modal title="Invite">
+    <form name="inviteConfirmForm" class="log-reg-block sky-form" role="form" novalidate="novalidate">
+        <div>
+            You've received a game invitation by <b>{{controller.name}}</b>. Do you accept it?
+        </div>
+        <button ng-click="controller.confirm()" type="submit" class="btn btn-primary pull-right" data-style="slide-up">
+            <span class="ladda-label">Yes</span>
+            <span class="ladda-spinner"></span>
+        </button>
+        <button ng-click="controller.cancel()" class="btn btn-default" data-style="slide-up" type="button">
+            No
+        </button>
+    </form>
+</modal>

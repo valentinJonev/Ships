@@ -1,0 +1,42 @@
+﻿<modal title="Create game">
+    <form name="createGameForm" class="log-reg-block sky-form" role="form" novalidate="novalidate">
+        <div class="battleship">
+            <table class="board">
+                <tr ng-repeat="row in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]">
+                    <td ng-repeat="col in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]">
+                        <div ng-if="controller.board[row][col] > 0" class="ship">
+                            {{controller.board[row][col]}}
+                        </div>
+                        <div ng-click="controller.removePosition(row, col)" ng-if="controller.board[row][col] < 0" class="in-progress">
+                        </div>
+                        <div ng-click="controller.addPosition(row, col)" ng-if="controller.board[row][col] == 0" ng-class="{'free': controller.canBeInShip(row, col), 'unreachable' : !controller.canBeInShip(row, col)}">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <button ng-click="controller.reset()" class="btn btn-sm btn-default">Reset</button>
+            <button ng-click="controller.addShip()" ng-disabled="!controller.canAdd" class="btn btn-sm btn-primary  pull-right">Add</button>
+        </div>
+        <div>
+            <table class="table">
+                <tr ng-repeat="ship in controller.ships">
+                    <td>{{ship.idx}}. </td>
+                    <td> {{ship.positions.length}} positions</td>
+                    <td class="table-action">
+                        <button ng-click="controller.removeShip(ship.idx)" class="btn btn-xs btn-danger">Remove</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            Selected positions: {{controller.selectedCells}}/{{controller.POSITIONS_COUNT}}
+        </div>
+        <div class="btn" style="visibility: hidden;">
+            ...
+        </div>
+        <button ng-click="controller.confirm()" ng-disabled="!controller.canComplete" type="submit" class="btn btn-primary pull-right" data-style="slide-up">
+            <span class="ladda-label">Done</span>
+            <span class="ladda-spinner"></span>
+        </button>
+    </form>
+</modal>

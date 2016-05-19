@@ -1,0 +1,55 @@
+﻿<div class="row">
+    <div class="col-md-12">
+        <h3 class="title">Game</h3>
+    </div>
+</div>
+<div class="row dashboard shadowed create-survey">
+    <div>
+        <ul>
+            <li ng-repeat="player in controller.playerNames">
+                {{player}}
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <div class="battleship" ng-class="{'turn': controller.isCurrentTurn}">
+            <table class="board">
+                <tr ng-repeat="row in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]">
+                    <td ng-repeat="col in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]">
+                        <div ng-if="controller.boardCurrent[row][col] > 0" class="ship">
+                            {{controller.boardCurrent[row][col]}}
+                        </div>
+                        <div ng-if="controller.boardCurrent[row][col] == 0" class="free current">
+                        </div>
+                        <div ng-if="controller.boardCurrent[row][col] == -1" class="miss">
+                        </div>
+                        <div ng-if="controller.boardCurrent[row][col] < -1" class="hit">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div>
+                Hit targets: {{controller.hitCurrent}}/{{controller.POSITIONS_COUNT}}
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="battleship" ng-class="{'turn': !controller.isCurrentTurn}">
+            <table class="board">
+                <tr ng-repeat="row in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]">
+                    <td ng-repeat="col in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]">
+                        <div ng-click="controller.shoot(row, col)" ng-if="controller.boardOther[row][col] == 0" class="free">
+                        </div>
+                        <div ng-if="controller.boardOther[row][col] == -1" class="miss">
+                        </div>
+                        <div ng-if="controller.boardOther[row][col] < -1" class="hit">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div>
+                Hit targets: {{controller.hitOther}}/{{controller.POSITIONS_COUNT}}
+            </div>
+        </div>
+    </div>
+</div>

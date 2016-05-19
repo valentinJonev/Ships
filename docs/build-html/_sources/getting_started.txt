@@ -1,0 +1,25 @@
+Getting Started
+===============
+
+Downloading the source code
+---------------------------
+You can find the source code of the project in our `Github repository`_ . It is open source so if you find any bugs or decide to improve it we welcome you to do it. Please do keep in mind that this is school project so try to document your changes as best as you can and please contact us afterwards. Also you can use this project as a template for your own projects, but please mention us with good.
+
+Building the project
+--------------------
+To build the project you need to download `Visual Studio`_ with `Apache Cordova`_ tools enabled for the mobile application. We recomend using Visual Studio 2015, but you can use whatever version sutes you if it supports Apache Cordova tools.
+
+After opening the solution in VS you should see a tree structure in the Source Explorer. For a startup application you should select the Authentication server first and start it because it is crucial for the application. Then build and start the back-end and then the front-end. Also you can tweek the IP and port settings in the project settings. If you are going to build the mobile application do keep in mind that you are going to need some emulators. See the `Mobile`_ section for more information.
+
+What is this thing?
+-------------------
+The project is organised in multiple applications - authentication server, back-end, front-end and a mobile application. For every one of them you can find more information in the specific section in this documentation. But if you find something undocumented please do contact us and we will document it.
+
+How to contribute
+-----------------
+To contribute to the project please contact us. Maybe you have a great idea that we didn't think of or maybe it is in development. Do keep in mind that we try to keep our code clean and bug-free, so we recomend you to test your contributions carefuly and write tests for the CI platforms we are using. Also please document your code.
+
+.. _Github repository: https://github.com/valentinJonev/Belote/
+.. _Visual Studio: https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx
+.. _Apache Cordova: https://cordova.apache.org/
+.. _Mobile: mobile.html

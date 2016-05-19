@@ -1,0 +1,13 @@
+﻿{
+  "Debug": {
+    "shipsServiceUrls": {
+      "authenticationServiceUrl": "http://localhost:3471"
+    }
+
+  },
+  "Release": {
+    "shipsServiceUrls": {
+      "authenticationServiceUrl": "http://localhost:3471"
+    }
+  }
+}

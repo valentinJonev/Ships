@@ -1,0 +1,14 @@
+﻿<modal title="Error">
+    <div class="form-group">
+        <h3>{{controller.model.message}}</h3>
+        <ul ng-repeat="err in controller.model.errorList">
+            <li>{{err}}</li>
+        </ul>
+    </div>
+    <div class="clearfix">
+        <button class="btn btn-u btn-u-sea-shop margin-bottom-20 ladda-button btn-action pull-right" data-style="slide-up" type="submit" ng-click="controller.cancel()">
+            <span class="ladda-label">Ok</span>
+            <span class="ladda-spinner"></span>
+        </button>
+    </div>
+</modal>

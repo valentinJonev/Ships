@@ -1,0 +1,14 @@
+C:\Projects\School\Ships\Source\Ships.Auth.Core\bin\Debug\Ships.Auth.Core.dll.config
+C:\Projects\School\Ships\Source\Ships.Auth.Core\bin\Debug\Ships.Auth.Core.dll
+C:\Projects\School\Ships\Source\Ships.Auth.Core\bin\Debug\Ships.Auth.Core.pdb
+C:\Projects\School\Ships\Source\Ships.Auth.Core\bin\Debug\EntityFramework.dll
+C:\Projects\School\Ships\Source\Ships.Auth.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\School\Ships\Source\Ships.Auth.Core\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Projects\School\Ships\Source\Ships.Auth.Core\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Projects\School\Ships\Source\Ships.Auth.Core\bin\Debug\EntityFramework.xml
+C:\Projects\School\Ships\Source\Ships.Auth.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\School\Ships\Source\Ships.Auth.Core\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Projects\School\Ships\Source\Ships.Auth.Core\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Projects\School\Ships\Source\Ships.Auth.Core\obj\Debug\Ships.Auth.Core.csprojResolveAssemblyReference.cache
+C:\Projects\School\Ships\Source\Ships.Auth.Core\obj\Debug\Ships.Auth.Core.dll
+C:\Projects\School\Ships\Source\Ships.Auth.Core\obj\Debug\Ships.Auth.Core.pdb
